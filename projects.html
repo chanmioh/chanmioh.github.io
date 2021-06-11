@@ -22,26 +22,41 @@
         <header>
             <nav class="nav">
                 <ul class="nav__list">
-                    <li class="nav__item"><a href="index.html" class="nav__link nav__active">home</a></li>
+                    <li class="nav__item"><a href="index.html" class="nav__link">home</a></li>
                     <li class="nav__item"><a href="about.html" class="nav__link">about me</a></li>
-                    <li class="nav__item"><a href="projects.html" class="nav__link">projects</a></li>
+                    <li class="nav__item"><a href="projects.html" class="nav__link nav__active">projects</a></li>
                     <li class="nav__item"><a href="contact.html" class="nav__link">contact</a></li>
                 </ul>
             </nav>
         </header>
 
-        <main>
-            <!-- intro -->
-            <section class="intro" id="home">
-                <img src="website-pfp.jpg" class="pfp"\>
-                <h1 class="section__title section__title--intro">
-                    hi, I'm chanmi!
-                </h1>
-                <p class="section__subtitle section__subtitle--intro">Software developer and digital artist.</p>
-            </section>
+        <!-- projects -->
+        <section class="my-projects" id="projects">
+            <h2 class="section__title">projects</h2>
 
-        </main>
+            <div class="portfolio">
+                <ul class="portfolio__list">
+                    <li class="portfolio__item"> <a href="https://stardoodles.qoom.space/" class="portfolio__item">
+                        <img src="stardoodles.png" alt="" class="portfolio__img">
+                    </a><div class="portfolio-desc">
+                        <p>A mindfulness art journal web app to creatively express emotions and thoughts and save them digitally.
+                        </p>
+                    </div> </li>
+                </ul>
+                
+                <ul class="portfolio__list">
+                    <li class="portfolio__item"> <a href="https://ritscuit.itch.io/wilted-flowers" class="portfolio__item"> 
+                        <img src="https://img.itch.zone/aW1nLzQwMzQ5NzIuanBn/347x500/T%2BiTAm.jpg" alt="" class="portfolio__img">
+                        </a> 
+                        <div class="portfolio-desc">
+                            <p>A Choose Your Own Adventure game created in RenPy.
+                            </p>
+                        </div> 
+                    </li>
+                </ul>
+            </div>
 
+        </section>
 
         <!-- footer -->
         <footer>
