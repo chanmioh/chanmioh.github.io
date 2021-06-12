@@ -64,11 +64,11 @@ header {
 }
 
 .nav__link:hover {
-    color: #115348;
+    color: #095256;
 }
 
 .nav__active {
-    color: #115348;
+    color: #095256;
 }
 
 /* intro section */
@@ -150,25 +150,24 @@ header {
 .contact-form {
     margin: auto;
     margin-top: 2%;
+    margin-bottom: 1%;
     width: 40%;
 }
 
-input[type=text], select, textarea{
+input[type=text], select, textarea {
     width: 100%;
     resize: vertical;
+    clear: both;
 }
 
-
-/* footer */
-footer {
-    clear: both;
-    margin: 1%;
+.social-list {
     list-style: none;
-    position: absolute;
-    bottom: 0;
+    margin: 0 auto;
+    padding-left: 33%;
 }
 
 .social-list__item {
+    width: 15%;
+    margin-right: 2%;
     display: inline-block;
-    width: 3%;
 }
