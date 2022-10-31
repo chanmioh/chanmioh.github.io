@@ -71,7 +71,7 @@ $top-right-radii: 0% 1% 0% 0%;
 }
 
 %info {
-	@include flex($dir: column, $align-i: center);
+	@include flex($dir: column, $justify-c: center);
 	@include bg;
 	flex: 4;
 	padding: 50px;

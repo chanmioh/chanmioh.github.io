@@ -9,11 +9,11 @@
 .info, .info-top {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: normal;
   align-content: normal;
   align-self: normal;
   flex-wrap: nowrap;
-  justify-content: normal;
+  justify-content: center;
   background-color: #fdfdfd;
   flex: 4;
   padding: 50px;
