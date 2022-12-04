@@ -1,0 +1,16 @@
+[
+  {
+    "location": "Sandbox",
+    "url": "https://github.com/sandboxnu/sga-tooling",
+    "time": "09/22 - Present",
+    "role": "Tech Lead & Software Developer",
+    "description": "Sandbox is a software consultancy at Northeastern creating robust and impactful software. Though just recently joined, I've become a technical lead for one of the projects working with the student government as the client, working on an event and attendance management web app. I believe my role as both tech lead and software developer has made great contributions for our group, as I'm happy to help others understand the tech stack - whether it's in the form of teaching or pair programming!"
+  },
+  {
+    "location": "DAILP",
+    "url": "https://dailp.northeastern.edu/",
+    "time": "06/22 - Present",
+    "role": "Software Developer Co-op",
+    "description": "DAILP preserves indigenous language through a digital archive web app. I've worked on various features ranging from designing and building dynamic, interactive React components for editing Cherokee documents to developing GraphQL endpoints in Rust."
+  }
+]

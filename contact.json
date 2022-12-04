@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Email",
+    "img": "./assets/Email.svg",
+    "url": "mailto:oh.c@northeastern.edu"
+  },
+  {
+    "name": "Github",
+    "img": "./assets/Github.svg",
+    "url": "https://github.com/chanmioh"
+  },
+  {
+    "name": "Linkedin",
+    "img": "./assets/Linkedin.svg",
+    "url": "https://www.linkedin.com/in/chanmioh/"
+  }
+]
