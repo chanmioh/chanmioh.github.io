@@ -4,13 +4,15 @@
     "tools": "TypeScript • Gatsby",
     "description": "Designed and developed website for Northeastern's digital illustration organization.",
     "url": "https://neudia.github.io",
+    "code": "https://github.com/neudia/neudia.github.io",
     "img": "./assets/Dia-Logo.png"
   },
   {
     "title": "StarDoodles",
     "tools": "JavaScript • HTML/CSS",
     "description": "Implemented a web app encouraging mindfulness through creative expression - won best use of Qoom software.",
-    "url": "https://github.com/melocule/stardoodles",
+    "url": "https://melocule.github.io/stardoodles/home.html",
+    "code": "https://github.com/melocule/stardoodles",
     "img": "./assets/stardoodles.png"
   }
 ]

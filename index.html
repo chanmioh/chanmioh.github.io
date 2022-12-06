@@ -67,10 +67,15 @@
 					<img src=${project.img} class="project-img"/>
 					<div>
 						<a class="link icon-link" href=${project.url}><div class="title">${project.title}</div><img style="height: 0.9rem" src="./assets/Link.svg"/></a>
-						<span class="desc">${project.tools}</span>
+						<a class="link icon-link" aria-label="View Github code" href=${project.code}>
+						<span class="desc d-flex" style="gap: 0.5rem">
+							<img style="width: 1.2rem" src="./assets/Github.svg">
+							${project.tools}
+						</span>
+						</a>
 						<p class="my-3 desc">${project.description}</p>
 					</div>
-				</div >`
+				</div>`
 			).join('')
 		</script>
 		<main id="projects" class="section">
