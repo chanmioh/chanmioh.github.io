@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap");
 * {
-  font-family: "Inter", sans-serif;
+  font-family: "Sora", sans-serif;
   padding: 0;
   margin: 0;
 }
@@ -88,11 +88,15 @@ body {
   gap: 1rem;
 }
 
+.project:hover {
+  transform: translateY(-0.2rem);
+  transition: all 0.2s ease;
+}
+
 .project-img {
-  width: 15rem;
-  aspect-ratio: 1/1;
+  height: 15rem;
+  width: 100%;
   max-width: 100%;
-  background-color: #6692da;
   border-radius: 1rem;
   object-fit: cover;
 }
@@ -100,7 +104,6 @@ body {
 .project-list {
   display: flex;
   flex-direction: column;
-  padding: 1rem 0rem 1rem 0rem;
 }
 @media (min-width: 769px) {
   .project-list {
@@ -111,6 +114,7 @@ body {
 .heading {
   font-size: 1.5rem;
   font-weight: 500;
+  margin-bottom: 1rem;
 }
 
 .title {
@@ -124,6 +128,24 @@ body {
 
 .icon-link:hover {
   filter: invert(58%) sepia(46%) saturate(526%) hue-rotate(180deg) brightness(88%) contrast(93%);
+}
+
+.btn-bg {
+  background-color: #f0efef;
+  color: #656565;
+  font-size: 0.9rem;
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+  padding: 0.3rem 0.7rem 0.3rem 0.7rem;
+  border: none;
+  border-radius: 0.3rem;
+  box-shadow: none;
+}
+
+.btn-bg:hover {
+  background-color: #c9c7c7;
+  color: white;
+  transition: all 0.2s;
 }
 
 /*# sourceMappingURL=general.css.map */
