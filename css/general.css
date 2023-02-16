@@ -16,6 +16,7 @@ body {
   align-items: center;
   gap: 3rem;
   padding: 0rem 3rem 0rem 3rem;
+  width: 100%;
 }
 @media (min-width: 769px) {
   .layout {
@@ -25,16 +26,25 @@ body {
 
 .nav-content {
   display: flex;
+  flex-direction: column;
+
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
+
+  padding: 0;
+  margin: 0;
+  margin-top: 2rem;
+
   font-size: 1.2rem;
-  padding: 2rem 0rem 2rem 0rem;
   list-style: none;
 }
-@media (min-width: 769px) {
+@media (min-width: 400px) {
   .nav-content {
+    flex-direction: row;
     justify-content: flex-end;
+
+    gap: 2rem;
   }
 }
 
@@ -45,7 +55,6 @@ body {
 
 .nav-content li a:hover {
   color: #6692da;
-  text-decoration: underline;
 }
 
 .link {
@@ -65,10 +74,9 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 3rem;
 }
-@media (min-width: 769px) {
+@media (min-width: 600px) {
   .hero {
     flex-direction: row;
   }
@@ -88,7 +96,8 @@ body {
   gap: 1rem;
 }
 
-.project:hover {
+.project:hover,
+img:hover {
   transform: translateY(-0.2rem);
   transition: all 0.2s ease;
 }
@@ -114,7 +123,9 @@ body {
 .heading {
   font-size: 1.5rem;
   font-weight: 500;
+  padding-bottom: 0.5rem;
   margin-bottom: 1rem;
+  border-bottom: 0.1rem solid #e6e2e2;
 }
 
 .title {
@@ -127,7 +138,8 @@ body {
 }
 
 .icon-link:hover {
-  filter: invert(58%) sepia(46%) saturate(526%) hue-rotate(180deg) brightness(88%) contrast(93%);
+  filter: invert(58%) sepia(46%) saturate(526%) hue-rotate(180deg)
+    brightness(88%) contrast(93%);
 }
 
 .btn-bg {
@@ -148,4 +160,13 @@ body {
   transition: all 0.2s;
 }
 
-/*# sourceMappingURL=general.css.map */
+footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+@media (min-width: 769px) {
+  footer {
+    flex-direction: row;
+  }
+}

@@ -24,7 +24,7 @@
 				`<li class="nav-item"><a href="${link.url}">${link.name}</a></li>`
 			).join('')
 		</script>
-		<nav class="w-100">
+		<nav style="width: 100%">
 			<ul id="nav" class="nav-content">
 			</ul>
 		</nav>
@@ -65,7 +65,7 @@
 			).join('')
 		</script>
 		<main id="experience" class="section">
-			<h1 class="heading">experience</h1>
+			<h1 class="heading">👩‍💻 experience </h1>
 			<div id="experience-list" style="display: flex; flex-direction: column; gap: 2rem">
 			</div>
 		</main>
@@ -99,7 +99,7 @@
 			).join('')
 		</script>
 		<main id="projects" class="section">
-			<h1 class="heading">projects</h1>
+			<h1 class="heading">🪧 projects</h1>
 			<div id="projects-list" class="project-list" style="gap: 3rem" />
 		</main>
 		<!-- FOOTER -->
@@ -112,11 +112,12 @@
 				`<a class="icon-link" aria-label="Link to ${d.name}" href=${d.url}><img src=${d.img} style="width: 2rem"/></a>`
 			).join('')
 
-			document.getElementById("footer").innerHTML = `<div style="flex: 1">made by chanmi oh</div>` + data.map((d) =>
+			document.getElementById("footer").innerHTML = `<div style="flex: 1">made by chanmi oh</div>` + `<div style="display: flex; gap: 1rem">
+						${data.map((d) =>
 				`<a class="icon-link" aria-label="Link to ${d.name}" href=${d.url}><img src=${d.img} style="width: 2rem"/></a>`
-			).join('')
+			).join('')}</div>`
 		</script>
-		<footer id="footer" class="w-100 d-flex justify-content-between" style="padding-bottom: 2rem; gap: 1rem" />
+		<footer id="footer" class="w-100 d-flex" style="padding-bottom: 2rem; gap: 1rem" />
 	</main>
 </body>
 
