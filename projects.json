@@ -2,7 +2,7 @@
   {
     "title": "DIA Site",
     "tools": "TypeScript • Gatsby",
-    "description": "Designed and developed website for Northeastern's digital illustration organization.",
+    "description": "Designed and developed website for Northeastern's digital illustration organization",
     "url": "https://neudia.github.io",
     "code": "https://github.com/neudia/neudia.github.io",
     "img": "./assets/Dia-Logo.png"
@@ -10,9 +10,17 @@
   {
     "title": "StarDoodles",
     "tools": "JavaScript • HTML/CSS",
-    "description": "Implemented a web app encouraging mindfulness through creative expression - won best use of Qoom software.",
+    "description": "A mindfulness art journal web app that won best use of a startup web dev platform during a 24-hour Starhacks hackathon",
     "url": "https://melocule.github.io/stardoodles/home.html",
     "code": "https://github.com/melocule/stardoodles",
     "img": "./assets/stardoodles.png"
+  },
+  {
+    "title": "Animator",
+    "tools": "Java • Java Swing",
+    "description": "Java program that animates 2D shapes, utilizing object-oriented and MVC design for extensible, robust software with mocks and unit tests",
+    "url": null,
+    "code": null,
+    "img": "./assets/java-swing.jpeg"
   }
 ]

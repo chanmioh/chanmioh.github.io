@@ -20,9 +20,9 @@
 		<script type="module">
 			const linksRes = await fetch("nav.json")
 			const linksJson = await linksRes.json()
-			document.getElementById("nav").innerHTML = linksJson.map((link) =>
+			document.getElementById("nav").innerHTML = `<li style="flex: 1; font-weight: bold">chanmi oh</li>${linksJson.map((link) =>
 				`<li class="nav-item"><a href="${link.url}">${link.name}</a></li>`
-			).join('')
+			).join('')}`
 		</script>
 		<nav style="width: 100%">
 			<ul id="nav" class="nav-content">
@@ -32,7 +32,7 @@
 		<main id="home" class="hero">
 			<img style="width: 11rem; border-radius: 1rem" src="./assets/OhC.png" />
 			<div style="font-size: 1.2rem">
-				<div>Hi, I’m Chanmi! I’m a full-stack developer passionate about creating accessible, impactful
+				<div>👋 Hi, I’m Chanmi! I’m a full-stack developer passionate about creating impactful, user-friendly
 					technology.</div>
 				<span id="icons" class="d-flex my-3" style="gap: 1rem" />
 			</div>
@@ -80,7 +80,7 @@
 						<div class="title">${project.title}</div>
 						${project.tools}
 						<span style="display: flex; gap: 0.8rem">
-							<a href=${project.url} aria-label="View website">
+							${project.url ? `<a href=${project.url} aria-label="View website">
 								<button class="btn-bg">
 									🔗&nbsp&nbspView website
 								</button>	
@@ -90,7 +90,9 @@
 								<button class="btn-bg">
 									💻&nbsp&nbspView Github
 								</button>	
-							</a>
+							</a>` : `<button class="btn-bg">
+									💻&nbsp&nbspCode available upon request
+								</button>	`}
 						</span>
 						
 						<p class="my-3 desc">${project.description}</p>
@@ -100,7 +102,7 @@
 		</script>
 		<main id="projects" class="section">
 			<h1 class="heading">🪧 projects</h1>
-			<div id="projects-list" class="project-list" style="gap: 3rem" />
+			<div id="projects-list" class="project-list"/>
 		</main>
 		<!-- FOOTER -->
 		<script type="module">

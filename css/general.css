@@ -16,45 +16,40 @@ body {
   align-items: center;
   gap: 3rem;
   padding: 0rem 3rem 0rem 3rem;
-  width: 100%;
 }
 @media (min-width: 769px) {
   .layout {
-    width: 50rem;
+    width: 60rem;
   }
 }
 
 .nav-content {
   display: flex;
   flex-direction: column;
-
   justify-content: center;
   align-items: center;
-  gap: 1rem;
-
-  padding: 0;
-  margin: 0;
-  margin-top: 2rem;
-
+  gap: 2rem;
   font-size: 1.2rem;
+  padding: 2rem 0rem 2rem 0rem;
   list-style: none;
 }
-@media (min-width: 400px) {
+@media (min-width: 769px) {
   .nav-content {
     flex-direction: row;
     justify-content: flex-end;
-
-    gap: 2rem;
   }
 }
 
-.nav-content li a {
+a {
   color: black;
   text-decoration: none;
 }
 
-.nav-content li a:hover {
+a:hover {
   color: #6692da;
+  text-decoration: none;
+  transform: translateY(-0.2rem);
+  transition: all 0.2s ease;
 }
 
 .link {
@@ -67,7 +62,7 @@ body {
 
 .link:hover {
   color: #6692da;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .hero {
@@ -77,7 +72,7 @@ body {
   align-items: center;
   gap: 3rem;
 }
-@media (min-width: 600px) {
+@media (min-width: 769px) {
   .hero {
     flex-direction: row;
   }
@@ -94,11 +89,16 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 1rem;
   gap: 1rem;
 }
+@media (min-width: 769px) {
+  .project {
+    width: 50%;
+  }
+}
 
-.project:hover,
-img:hover {
+.project:hover {
   transform: translateY(-0.2rem);
   transition: all 0.2s ease;
 }
@@ -113,11 +113,11 @@ img:hover {
 
 .project-list {
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
 }
 @media (min-width: 769px) {
   .project-list {
-    flex-direction: row;
+    flex-flow: row wrap;
   }
 }
 
@@ -126,7 +126,7 @@ img:hover {
   font-weight: 500;
   padding-bottom: 0.5rem;
   margin-bottom: 1rem;
-  border-bottom: 0.1rem solid #e6e2e2;
+  border-bottom: 1px solid #c9c7c7;
 }
 
 .title {
@@ -139,8 +139,7 @@ img:hover {
 }
 
 .icon-link:hover {
-  filter: invert(58%) sepia(46%) saturate(526%) hue-rotate(180deg)
-    brightness(88%) contrast(93%);
+  filter: invert(58%) sepia(46%) saturate(526%) hue-rotate(180deg) brightness(88%) contrast(93%);
 }
 
 .btn-bg {
@@ -161,13 +160,4 @@ img:hover {
   transition: all 0.2s;
 }
 
-footer {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-@media (min-width: 769px) {
-  footer {
-    flex-direction: row;
-  }
-}
+/*# sourceMappingURL=general.css.map */
